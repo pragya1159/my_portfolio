@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolia - Pragati Ganapuram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255, 255, 255, 0.9);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 700;
+    }
+    .menu{
+      display: flex;
+      gap: 20px;
+      padding: 10px 0;
+      justify-content: center;
+    }
+
+    .menu a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .horizontal-sections {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+    /* Section Background Images */
+    #home {
+      background-image: url('y1.webp');
+    }
+
+    #history {
+      background-image:url('y2.jpg');
+    }
+
+	#nature{
+		background-image:url('y4.jpg');
+	}
+	
+    #achievements{
+      background-image:url('y5.jpg');
+    }
+
+    #branches {
+      background-image: url('y6.jpg');
+    }
+
+    #vision {
+      background-image: url('y7.jpg');
+    }
+
+    #contact{
+      background-image: url('y3.avif');
+    }
+    footer {
+      background-color: #111;
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Portfolia</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#history">History</a>
+	    <a href="#nature">Nature</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#vision">Vision</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="horizontal-section">
+  <section id="home">
+    <div class="section-content">
+      <h1>Visionary Tech Innovators Pvt. Ltd.</h1>
+      <p><b>India</b> based cutting-edge Information Technology (IT) Company</p>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="section-content">
+      <h2>History</h2>
+	  <p>Visionary Tech Innovators Pvt. Ltd. was founded in March 2010 as an innovative IT solutions provider headquartered in Bengaluru, India. The company has grown into a reliable technology partner for startups, enterprises, and global corporations, offering robust digital transformation services.</p>
+    </div>
+  </section>
+  
+  <section id="nature">
+    <div class="section-content">
+      <h2>Nature Of Business</h2>
+	  <p>Visionary Tech Innovators is a premier Information Technology (IT) solutions company. Our expertise spans across multiple domains including:
+	  <ul>
+		<li>Java: Spring Boot, Hibernate, JSP</li>
+		<li>Python: Django, FastAPI, NumPy, Pandas</li>
+		<li>Frontend: React, HTML5, CSS3, Bootstrap</li>
+		<li>Mobile: Flutter, React Native</li>
+		<li>Database: MySQL, PostgreSQL, MongoDB</li>
+		<li>Cloud & DevOps: AWS, Docker, Jenkins</li>
+		<li>AI/ML Solutions and IoT Integration</li>
+	  </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="section-content">
+      <h2>Achievements</h2>
+	  <h3>Recognitions and Milestones</h3>
+      <ul type="disc">
+        <li>Google Cloud Innovator Award</li>
+        <li>Best Emerging Tech Company - India 2023</li>
+        <li>AI Product Excellence Recognition</li>
+        <li>ISO Certified for Quality & Security</li>
+        <li>Ranked Top 50 IT Startups in Asia</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="vision">
+    <div class="section-content">
+      <h2>Vision</h2>
+	  <p>To become a global leader in transformative IT solutions by nurturing innovation, empowering businesses, and embracing emerging technologies.<br><br>
+	  1. Promote sustainable tech innovation<br>
+	  2. Deliver unmatched digital solutions<br>
+	  3. Foster a culture of learning and integrity<br>
+	  4. Build long-term value for clients and partners</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+    <h2>Contact Us</h2>
+    <p>Email: contact@Visotech.org</p>
+    <p>Phone: +91-8788520280</p>
+    <p>Address: One Microsoft Way, WA 98052, Bengaluru.</p>
+</div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pragati Ganapuram. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
